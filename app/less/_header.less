@@ -1,0 +1,45 @@
+.header {
+   padding: 20px;
+   background: var(--bg-color);
+   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.nav-wrapp {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {
+   width: 45px;
+   height: 45px;
+}
+
+.menu {
+   display: flex;
+
+   &__item {
+      list-style: none;
+      margin-left: 20px;
+   }
+
+   &__linck {
+      text-decoration: none;
+      color: #fff;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: all .3s;
+      outline: none;
+   }
+
+   &__linck:hover,
+   &__linck:focus,
+   &__linck.active {
+        color: var(--hover-color);
+    }
+}
