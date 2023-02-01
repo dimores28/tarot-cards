@@ -14,3 +14,8 @@ $(function(){
     });
     
 });
+
+
+
+ScrollReveal().reveal('.love', { delay: 500 });
+ScrollReveal().reveal('.finances', { delay: 600, distance: '60px', duration: 500, origin: 'bottom' });

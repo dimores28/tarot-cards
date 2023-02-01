@@ -14,6 +14,7 @@
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
         rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         border-radius: 6px;
+        justify-content: space-between;
     }
 
     &__sub-title {
@@ -37,5 +38,51 @@
         flex-basis: 40%;
         box-sizing: border-box;
         padding: 20px;
+
+    }
+}
+
+@media (max-width: 1023px) {
+    .about-me {
+
+        &__img {
+            padding: 5px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .about-me {
+
+        &__img {
+            flex-basis: 50%;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .about-me {
+
+        &__block {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__text {
+            flex-basis: 90%;
+        }
+
+        &__img {
+           display: none;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .about-me {
+
+        &__text {
+            flex-basis: 100%;
+        }
     }
 }
