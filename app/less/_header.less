@@ -1,7 +1,12 @@
 .header {
-   padding: 10px 20px;
+   padding: 14px 20px;
    background: var(--bg-head);
    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .nav-wrapp {
@@ -30,11 +35,11 @@
 
    &__linck {
       text-decoration: none;
-      color: #fff;
+      color: var(--primary-text-color);
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 18px;
       letter-spacing: 0.05em;
       text-transform: uppercase;
@@ -55,7 +60,7 @@
    flex-direction: row;
    align-items: center;
    justify-content: space-between;
-   color: #FFF;
+   color: var(--primary-text-color);
    height: 50px;
  }
 
@@ -122,7 +127,7 @@
    transform: rotate(-405deg);
  }
 
- @media (max-width: 700px) {
+ @media (max-width: 760px) {
    .nav-wrapp {
       display: none;
    }
@@ -167,7 +172,7 @@
      margin: 0;
      padding: 0.5em 0;
      width: 100%;
-     color: white;
+     color: var(--primary-text-color);
      background: var(--bg-head);
    }
 

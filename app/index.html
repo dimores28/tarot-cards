@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-          
+	<link rel="icon" href="favicon.ico">     
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
 
 				<nav class="menu">
 					<li class="menu__item">
-						<a href="/" class="menu__linck">
+						<a href="#main" class="menu__linck">
 							Головна
 						</a>
 					</li>
@@ -33,7 +33,7 @@
 					</li>
 					<li class="menu__item">
 						<a href="#reviews" class="menu__linck">
-							Отзиви
+							Відгуки
 						</a>
 					</li>
 					<li class="menu__item">
@@ -50,8 +50,8 @@
 			</div>
 
 			<div class="top-nav">
-				<div>
-					<img src="images/logo_m.png" alt="logo" width="40">
+				<div class="logo">
+					<img src="images/logo_m.png" alt="logo" >
 				</div>
 				<input id="menu-toggle" type="checkbox" />
 				<label class='menu-button-container' for="menu-toggle">
@@ -59,7 +59,7 @@
 			 </label>
 				<ul class="menu-burger">
 					<li>
-						<a href="/" class="menu__linck">
+						<a href="#main" class="menu__linck">
 							Головна
 						</a>
 					</li>
@@ -75,7 +75,7 @@
 					</li>
 					<li>
 						<a href="#reviews" class="menu__linck">
-							Отзиви
+							Відгуки
 						</a>
 					</li>
 					<li>
@@ -95,18 +95,18 @@
 	</header>
 
 	<main class="main">
-		<section class="main-header">
+		<section class="main-header" id="main">
 			<div class="container">
 				<div class="offer">
 					<h1 class="offer__title">
-						Таро українською
+						Таро україн&shy;ською
 					</h1>
 					<p class="offer__sub-title">
 						Ти захочеш запитати ще
 					</p>
 					<p class="offer__desc">
 						Ворожіння на картах Таро. 
-                  Бажання відкрити завісу майбутнього, дізнатися, що на нас чекає, властиве всім людям. 
+                  		Бажання відкрити завісу майбутнього, дізнатися, що на нас чекає, властиве всім людям. 
 						У цьому немає нічого поганого, з допомогою ворожіння можна дізнатись чи є на людині магічні впливи. 
 						Вирішити, як вчинити в тій чи іншій ситуації.
 					</p>
@@ -114,24 +114,155 @@
 			</div>
 		</section>
 
-		<section class="about-tarot" id="about-tarot">
-			about-tarot
-		</section>
-
 		<section class="about-me" id="about-me">
-			about-me
+			<div class="container">
+				<h2 class="section__title">Про мене</h2>
+				<div class="row about-me__block">
+					<div class="about-me__text">
+						<p class="about-me__sub-title">
+							Всім привіт 👋
+						</p>
+						<p>
+							Мене звуть Анастасія – я таролог із величезним досвідом та практикою 
+							Пропоную Вам допомогу в будь-якому питанні: діагностую ситуацію, розповім майбутнє і знайду вихід з будь-якої проблеми. 
+							Працюю з питаннями в особистому житті та шлюбі, бізнесі та кар'єрі, здоров'я. Допоможу знайти свою другу половинку, майбутнього чоловіка чи жінку. 
+							Ти захочеш запитати ще 😉
+						</p>
+					</div>
+					<div class="about-me__img">
+						<img src="images/about/icon.jpg" alt="about images">
+					</div>
+				</div>
+			</div>
 		</section>
-
+		<!-- <div class="parallax-window" data-parallax="scroll" data-image-src="images/bg/2.png"></div> -->
 		<section class="services" id="services">
-			services
+			<h2 class="section__title">Послуги</h2>
+
+			<div class="container">
+				<h3 class="services__title">Питання любовного фронту</h3>
+				<div class="row">
+					<div class="col love">
+						<p class="finances__title">
+							Великий розклад на стосунки
+						</p>
+						<img src="images/services/br.png" alt="br" class="finances__img">
+						<ul class="finances__list">
+							<li>Ваш сигніфікатор та партнер</li>
+							<li>Ваші думки, дії</li>
+							<li>Думки, почуття, дії партнера</li>
+							<li>Ваші бажання</li>
+							<li>Бажання партнера</li>
+							<li>Що зараз між вами</li>
+							<li>Страхи ваші та партнера</li>
+							<li>Перспективи на 1міс, 3міс, півроку на вибір</li>
+						</ul>
+						<div class="finances__price">
+							750 uah / 18$
+						</div>
+					</div>
+					<div class="col love">
+						<p class="finances__title">
+							Минулі стосунки
+						</p>
+						<img src="images/services/br.png" alt="br" class="finances__img">
+						<ul class="finances__list">
+							<li>Як сприймає стосунки колишній/колишня</li>
+							<li>Чи шкодує про розрив</li>
+							<li>Чи є можливість на другий шанс</li>
+							<li>Чи буде партнер намагатися все відновити протягом 3 міс</li>
+							<li>Які будуть стосунки через півроку</li>
+							<li>Порада карт</li>
+						</ul>
+						<div class="finances__price">
+							350 uah / 9$
+						</div>
+					</div>
+					<div class="col love">
+						<p class="finances__title">
+							На стосунки
+						</p>
+						<img src="images/services/br.png" alt="br" class="finances__img">
+						<ul class="finances__list">
+							<li>Ваші думки, почуття, дії</li>
+							<li>Почуття, думки, дії партнера</li>
+							<li>Ситуація зараз</li>
+							<li>Перспективи</li>
+							<li>Порада карт</li>
+						</ul>
+						<div class="finances__price">
+							350 uah / 7$
+						</div>
+					</div>
+					<div class="col love">
+						<p class="finances__title">
+							Майбутній чоловік/дружина
+						</p>
+						<img src="images/services/br.png" alt="br" class="finances__img">
+						<ul class="finances__list">
+							<li>Загальна характеристика</li>
+							<li>Його позитивні/негативні риси характеру</li>
+							<li>Вид діяльності</li>
+							<li>Зовнішні характеристики</li>
+							<li>Обставини зустрічі</li>
+							<li>Яке враження ви справите оди на одного</li>
+							<li>Перепони у стосунках</li>
+							<li>Чи буде шлюб довготривалим</li>
+						</ul>
+						<div class="finances__price">
+							700 uah / 17$
+						</div>
+					</div>
+				</div>
+
+				<h3 class="services__title">Фінанси</h3>
+				<div class="row">
+					<div class="col finances">
+						<p class="finances__title">
+							Фінансовий потік
+						</p>
+						<img src="images/services/br.png" alt="br" class="finances__img">
+						<ul class="finances__list">
+							<li>Ваше ставлення до грошей</li>
+							<li>Обставини отримання коштів</li>
+							<li>Чи з'вляться додаткові</li>
+							<li>Матеріальне становище</li>
+							<li>Наскільки важко заробляються гроші</li>
+							<li>Благодійність</li>
+							<li>Порада для покращення фінансів</li>
+						</ul>
+						<div class="finances__price">
+							600 uah / 15$
+						</div>
+					</div>
+					<div class="col finances">
+						<p class="finances__title">
+							Розклад "влаштування на роботу"
+						</p>
+						<img src="images/services/br.png" alt="br" class="finances__img">
+						<ul class="finances__list">
+							<li>Чому запитуючий без роботи</li>
+							<li>Потенціал для пошуку роботи</li>
+							<li>Чого не вистачає, аби знайти роботу</li>
+							<li>Що реально можна зробити</li>
+							<li>В якій сфері шукати</li>
+							<li>Як швидко знайдете</li>
+							<li>Перспективи</li>
+						</ul>
+						<div class="finances__price">
+							470 uah / 12$
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		
 		<section class="reviews" id="reviews">
-			reviews
+			<h2 class="section__title">Відгуки</h2>
 		</section>
 
 		<section class="faq" id="faq">
-			faq
+			<h2 class="section__title">Запитання</h2>
 		</section>
 
 

@@ -12,7 +12,7 @@ const imagemin     = require('gulp-imagemin'); // Подключаем библ�
 const imagPngquant = require('imagemin-pngquant'); // Подключаем библиотеку для работы с png
 
 
-const jsFile =['app/lib/jquery-3.3.1.min.js',
+const jsFile =['app/lib/jquery-3.3.1.min.js', 'app/lib/parallax.min.js',
 'app/js/script.js'
 ];
 
