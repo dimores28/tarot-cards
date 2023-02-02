@@ -24,3 +24,19 @@ ScrollReveal().reveal('.about-me__block', { delay: 500, distance: '60px', durati
 
 ScrollReveal().reveal('.love', { delay: 500, distance: '60px', duration: 500, origin: 'bottom'});
 ScrollReveal().reveal('.finances', { delay: 500, distance: '60px', duration: 500, origin: 'bottom' });
+
+$('.reviews-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    speed: 300,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+  });
+
+  $('.accordion__header').on('click', function(){
+    $(this).toggleClass('showed');
+    $(this).next('.accordion__body').slideToggle(400);
+  });
