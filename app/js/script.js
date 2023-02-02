@@ -15,7 +15,12 @@ $(function(){
     
 });
 
+ScrollReveal().reveal('.nav-wrapp', { delay: 600, distance: '60px', duration: 500, origin: 'top' });
 
+ScrollReveal().reveal('.offer', { delay: 1200, distance: '100%', duration: 500, origin: 'left' });
+ScrollReveal().reveal('.main-header__img', { delay: 1200, distance: '60px', duration: 500, origin: 'right' });
 
-ScrollReveal().reveal('.love', { delay: 500 });
-ScrollReveal().reveal('.finances', { delay: 600, distance: '60px', duration: 500, origin: 'bottom' });
+ScrollReveal().reveal('.about-me__block', { delay: 500, distance: '60px', duration: 500, origin: 'left' });
+
+ScrollReveal().reveal('.love', { delay: 500, distance: '60px', duration: 500, origin: 'bottom'});
+ScrollReveal().reveal('.finances', { delay: 500, distance: '60px', duration: 500, origin: 'bottom' });
