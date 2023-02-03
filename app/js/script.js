@@ -34,6 +34,29 @@ $('.reviews-slider').slick({
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
+    centerMode: true,
+    centerPadding: '60px',
+
+    responsive: [
+        {
+            breakpoint: 1023,
+            settings: {
+                arrows: false,
+                centerPadding: '40px',
+                slidesToShow: 1,
+                variableWidth: true,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerPadding: '40px',
+                slidesToShow: 1,
+                dots: false,
+            }
+        }
+        ]
   });
 
   $('.accordion__header').on('click', function(){
