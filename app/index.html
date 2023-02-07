@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="ua">
+
 <head>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta property="og:site_name" content="iordanovna-tarot.netlify.app">
+	<meta property="og:url" content="iordanovna-tarot.netlify.app">
+	<meta name="robots" content="max-image-preview:large">
+	<meta property="og:site_name" content="Таро українською">
+
 	<title>Таро українською</title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="favicon.ico">     
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Таро українською. Таролог, аркани. Розклад на картах таро.">
+
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#0F1111" />
+	<meta name="msapplication-TileColor" content="#da532c">
+
+
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
 	<header class="header">
 		<div class="container">
 			<div class="nav-wrapp">
 				<div class="logo">
-					<img src="images/logo_m.png" alt="logo">
+					<img src="images/logo_m.png" alt="logo" width="42" height="42">
 				</div>
 
 				<nav>
@@ -53,12 +72,12 @@
 
 			<div class="top-nav">
 				<div class="logo">
-					<img src="images/logo_m.png" alt="logo" >
+					<img src="images/logo_m.png" alt="logo" width="42" height="42">
 				</div>
-				<input id="menu-toggle" type="checkbox" placeholder="a"/>
+				<input id="menu-toggle" type="checkbox" placeholder="a" />
 				<label class='menu-button-container' for="menu-toggle">
-				<div class='menu-button'></div>
-			 </label>
+					<div class='menu-button'></div>
+				</label>
 				<ul class="menu-burger">
 					<li>
 						<a href="#main" class="menu__linck active">
@@ -91,7 +110,7 @@
 						</a>
 					</li>
 				</ul>
-			 </div>
+			</div>
 		</div>
 
 	</header>
@@ -109,14 +128,14 @@
 							Ти захочеш запитати ще
 						</p>
 						<p class="offer__desc">
-							Ворожіння на картах Таро. 
-							Бажання відкрити завісу майбутнього, дізнатися, що на нас чекає — властиве всім людям. 
-							У цьому немає нічого поганого, з допомогою ворожіння можна дізнатись чи є на людині магічні впливи. 
+							Ворожіння на картах Таро.
+							Бажання відкрити завісу майбутнього, дізнатися, що на нас чекає — властиве всім людям.
+							У цьому немає нічого поганого, з допомогою ворожіння можна дізнатись чи є на людині магічні впливи.
 							Вирішити, як вчинити в тій чи іншій ситуації.
 						</p>
 					</div>
 					<div class="main-header__img">
-						<img src="images/tarot.png" alt="offer image" width="240">
+						<img src="images/tarot.png" alt="offer image" width="240" height="334">
 					</div>
 				</div>
 			</div>
@@ -131,20 +150,27 @@
 							Всім привіт 👋
 						</p>
 						<p>
-							Мене звуть Анастасія – я тарологиня із величезним досвідом та практикою 
-							Пропоную Вам допомогу в будь-якому питанні: діагностую ситуацію, розповім майбутнє і знайду вихід з будь-якої проблеми. 
-							Працюю з питаннями в особистому житті та шлюбі, бізнесі та кар'єрі. Допоможу знайти свою другу половинку, майбутнього чоловіка чи жінку. 
+							Мене звуть Анастасія – я тарологиня із величезним досвідом та практикою
+							Пропоную Вам допомогу в будь-якому питанні: діагностую ситуацію, розповім майбутнє і знайду вихід з
+							будь-якої проблеми.
+							Працюю з питаннями в особистому житті та шлюбі, бізнесі та кар'єрі. Допоможу знайти свою другу
+							половинку, майбутнього чоловіка чи жінку.
 							Ти захочеш запитати ще 😉
 						</p>
 					</div>
 					<div class="about-me__img">
-						<img src="images/about/about.jpg" alt="my photo" class="about-me__img">
+						<picture>
+							<source type="image/webp" srcset="images/about/about.webp">
+							<img src="images/about/about.jpg" alt="my photo" class="about-me__img" loading="lazy" width="430"
+								height="520">
+						</picture>
+
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<div class="parallax-window" data-parallax="scroll" data-image-src="../images/bg/3.png"></div>
+		<div class="parallax-window" data-parallax="scroll" data-image-src="../images/bg/3.webp"></div>
 
 		<section class="services" id="services">
 			<h2 class="section__title">Послуги</h2>
@@ -152,7 +178,8 @@
 			<div class="container">
 				<h3 class="services__title">Питання любовного фронту</h3>
 				<p class="services__desc">
-					Тут коментарі зайві. Найчастіші консультації в моїй практиці. <br> Та й у будь якого тарологів саме кохання.
+					Тут коментарі зайві. Найчастіші консультації в моїй практиці. <br> Та й у будь якого тарологів саме
+					кохання.
 				</p>
 				<div class="row love">
 					<div class="col card">
@@ -303,7 +330,8 @@
 
 				<h3 class="services__title">Фінанси</h3>
 				<p class="services__desc">
-					Допоможу знайти відповіді на всі хвилюючі питання. Фінансовий потік , влаштування на роботу, як краще вчинити в бізнесі. Знайдемо разом відповіді на все
+					Допоможу знайти відповіді на всі хвилюючі питання. Фінансовий потік , влаштування на роботу, як краще
+					вчинити в бізнесі. Знайдемо разом відповіді на все
 				</p>
 				<div class="row finances">
 					<div class="col card">
@@ -354,7 +382,7 @@
 			</div>
 		</section>
 
-		<div class="parallax-window" data-parallax="scroll" data-image-src="../images/bg/2.jpg"></div>
+		<div class="parallax-window" data-parallax="scroll" data-image-src="../images/bg/2.webp"></div>
 
 		<section class="education" id="education">
 			<h2 class="section__title">Індивідуальне навчання</h2>
@@ -368,37 +396,39 @@
 							Графік підбирається індивідуально, інформації багато, не більше 4х занять на тиждень.
 							Тривалість уроку 40-60 хв в середньому.
 
-							<ol class="program">
-								<li class="program__item">
-									 Урок: таро як система, трохи історичних фактів, як працює таро. Також уточнення по режиму навчання.
-								</li>
-								<li class="program__item">
-									 Старші аркани. Вже тут будемо робити перші розклади.
-								</li>
-								<li class="program__item">
-									 Молодші аркани(жезли,пентаклі).
-								</li>
-								<li class="program__item">
-									 Молодші аркани (кубки мечі).
-								</li>
-								<li class="program__item">
-									 Таро на здоров'я (обширна тема, може бути і на два уроки поділена).
-								</li>
-								<li class="program__item">
-									 Практика, розклади на стосунки, роботу, і т.д.
-								</li>
-								<li class="program__item">
-									 Таролог як професія в заробіток.
-								</li>
-								<li class="program__item">
-									 Спілкуємося по всім важливим і не дуже питанням.
-								</li>
-							</ol>
-							
-							Деякі теми розбиваються на декілька уроків, тому що інформації багато.
-							С другого уроку починаються дз та практика.
+						<ol class="program">
+							<li class="program__item">
+								Урок: таро як система, трохи історичних фактів, як працює таро. Також уточнення по режиму
+								навчання.
+							</li>
+							<li class="program__item">
+								Старші аркани. Вже тут будемо робити перші розклади.
+							</li>
+							<li class="program__item">
+								Молодші аркани(жезли,пентаклі).
+							</li>
+							<li class="program__item">
+								Молодші аркани (кубки мечі).
+							</li>
+							<li class="program__item">
+								Таро на здоров'я (обширна тема, може бути і на два уроки поділена).
+							</li>
+							<li class="program__item">
+								Практика, розклади на стосунки, роботу, і т.д.
+							</li>
+							<li class="program__item">
+								Таролог як професія в заробіток.
+							</li>
+							<li class="program__item">
+								Спілкуємося по всім важливим і не дуже питанням.
+							</li>
+						</ol>
 
-							І також є бонус для моїх учнів. За 2000 грн до суми курсу - просування у тік току та інстаграмі. Місячне ведення від мене: контент план, ідеї відео, і все що пов'язано з просуванням в соц мережах.
+						Деякі теми розбиваються на декілька уроків, тому що інформації багато.
+						С другого уроку починаються дз та практика.
+
+						І також є бонус для моїх учнів. За 2000 грн до суми курсу - просування у тік току та інстаграмі.
+						Місячне ведення від мене: контент план, ідеї відео, і все що пов'язано з просуванням в соц мережах.
 						</p>
 						<p class="education__price">
 							Ціна індивідуальношл курсу - 3500 грн
@@ -406,47 +436,55 @@
 					</div>
 					<div class="education__media media">
 						<div class="media__img">
-							<img src="images/about/education.jpg" alt="my photo">
+							<picture>
+								<source type="image/webp" srcset="images/about/education.webp">
+								<img src="images/about/education.jpg" loading="lazy" alt="my photo" width="562" height="776"">
+							</picture>
+							
 						</div>
-						<div class="media__lincks">
-							<a href="http://surl.li/ereeq" class="media__item">
-								<p class="media__item_text">До курсу</p>
-								<img src="images/icons/tiktok-icon.svg" alt="tiktok" class="media__lincks_img">
-							</a>
+						<div class=" media__lincks">
+								<a href="http://surl.li/ereeq" class="media__item">
+									<p class="media__item_text">До курсу</p>
+									<img src="images/icons/tiktok-icon.svg" alt="tiktok" class="media__lincks_img">
+								</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 		</section>
-		
+
 		<section class="reviews" id="reviews">
 			<h2 class="section__title">Відгуки</h2>
 			<div class="container">
 				<div class="reviews-slider">
 					<div class="reviews-slider__item">
-						<img src="images/reviews/1.png" alt="slide">
+						<!-- <picture>
+							<source type="image/webp" srcset="img/1.webp">
+							<img src="img/1.png" alt="" loading="lazy" width="430" height="241">
+						</picture> -->
+						<img src="images/reviews/1.png" alt="slide" width="256" height="354">
 					</div>
 					<div class="reviews-slider__item">
-						<img src="images/reviews/4.png" alt="slide">
+						<img src="images/reviews/4.png" alt="slide" width="256" height="354">
 					</div>
 					<div class="reviews-slider__item">
-						<img src="images/reviews/2.png" alt="slide">
+						<img src="images/reviews/2.png" alt="slide" width="256" height="354">
 					</div>
 					<div class="reviews-slider__item">
-						<img src="images/reviews/3.png" alt="slide">
+						<img src="images/reviews/3.png" alt="slide" width="256" height="354">
 					</div>
 					<div class="reviews-slider__item">
-						<img src="images/reviews/4.png" alt="slide">
+						<img src="images/reviews/4.png" alt="slide" width="256" height="354">
 					</div>
 					<div class="reviews-slider__item">
-						<img src="images/reviews/5.png" alt="slide">
+						<img src="images/reviews/5.png" alt="slide" width="256" height="354">
 					</div>
 					<div class="reviews-slider__item">
-						<img src="images/reviews/2.png" alt="slide">
+						<img src="images/reviews/2.png" alt="slide" width="256" height="354">
 					</div>
 					<div class="reviews-slider__item">
-						<img src="images/reviews/3.png" alt="slide">
+						<img src="images/reviews/3.png" alt="slide" width="256" height="354">
 					</div>
 				</div>
 			</div>
@@ -462,7 +500,8 @@
 						</div>
 						<div class="accordion__body">
 							<div class="accordion__content">
-								Пишете мені в зручний для вас месенджер, описуєте вашу ситуацію, я допомагаю правильро поставити відповідне питання.
+								Пишете мені в зручний для вас месенджер, описуєте вашу ситуацію, я допомагаю правильро поставити
+								відповідне питання.
 							</div>
 						</div>
 					</div>
@@ -472,7 +511,8 @@
 						</div>
 						<div class="accordion__body">
 							<div class="accordion__content">
-								Пишете мені в зручний месенджер, оплачуєте, в форматі смс або голосового повідомлення отримуєте відповіді.
+								Пишете мені в зручний месенджер, оплачуєте, в форматі смс або голосового повідомлення отримуєте
+								відповіді.
 								Особиста консультація проводиться у форматі відео дзвінку, або в звичайний дзвінок.
 							</div>
 						</div>
@@ -493,7 +533,8 @@
 						</div>
 						<div class="accordion__body">
 							<div class="accordion__content">
-								Звичайно! Вся інформація далі нашого діалогу ні до кого не дійде. Я поважаю кожного клієнта, тому ні чоловік, ні хлопець, ні дівчина, ні родичі не дізнаються ваші питання та мої відповіді.
+								Звичайно! Вся інформація далі нашого діалогу ні до кого не дійде. Я поважаю кожного клієнта,
+								тому ні чоловік, ні хлопець, ні дівчина, ні родичі не дізнаються ваші питання та мої відповіді.
 							</div>
 						</div>
 					</div>
@@ -519,16 +560,17 @@
 				<a href="http://surl.li/ereeq" class="social-media__linck">
 					<img src="images/icons/tiktok-icon.svg" alt="tiktok">
 				</a>
-				<a href="#" class="social-media__linck">
+				<a href="https://t.me/iordanovnaa1812" class="social-media__linck">
 					<img src="images/icons/telegram.svg" alt="telegram">
 				</a>
 			</div>
 			<div class="footer__img">
-				<img src="images/icons/footer_logo.png" alt="footer logo">
+				<img src="images/icons/footer_logo.png" alt="footer logo" loading="eager">
 			</div>
 		</div>
 	</footer>
-	
+
 	<script src="js/libs.min.js"></script>
 </body>
+
 </html>
