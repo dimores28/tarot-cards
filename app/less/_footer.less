@@ -1,6 +1,9 @@
 .footer {
     padding: 100px 20px 60px;
-    background: var(--bg-head);
+    background: #000;
+    background-image:  url( '../images/bg/stars_5.png');
+    background-repeat: repeat;
+    position: relative;
 
     &__img {
         margin: 0 auto;
@@ -28,3 +31,11 @@
         background: var(--orange);
     }
 }
+
+.stars {
+    z-index: 0;
+    position: absolute;
+    transform:translate3D(0em, 0em, 0);
+    animation: stars 21s ease; 
+    transform-style: preserve-3d;
+  }
