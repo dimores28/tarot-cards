@@ -31,7 +31,7 @@ $('.reviews-slider').slick({
     slidesToScroll: 3,
     speed: 300,
     dots: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     arrows: false,
     centerMode: true,
