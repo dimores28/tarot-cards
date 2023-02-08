@@ -25,6 +25,12 @@ ScrollReveal().reveal('.about-me__block', { delay: 500, distance: '60px', durati
 ScrollReveal().reveal('.love', { delay: 500, distance: '60px', duration: 500, origin: 'bottom'});
 ScrollReveal().reveal('.finances', { delay: 500, distance: '60px', duration: 500, origin: 'bottom' });
 
+ScrollReveal().reveal('.education__block', { delay: 600, distance: '80px', duration: 500, origin: 'right' });
+
+ScrollReveal().reveal('.reviews-slider', { delay: 500, distance: '90px', duration: 500, origin: 'bottom' });
+
+ScrollReveal().reveal('.accordion', { delay: 400, distance: '90px', duration: 500, origin: 'bottom' });
+
 $('.reviews-slider').slick({
     infinite: true,
     slidesToShow: 3,
@@ -51,7 +57,7 @@ $('.reviews-slider').slick({
             breakpoint: 480,
             settings: {
                 arrows: false,
-                centerPadding: '40px',
+                centerPadding: '20px',
                 slidesToShow: 1,
                 dots: false,
             }
