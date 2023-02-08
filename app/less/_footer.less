@@ -4,6 +4,7 @@
     background-image:  url( '../images/bg/stars_5.png');
     background-repeat: repeat;
     position: relative;
+    animation: stars 25s linear infinite;
 
     &__img {
         margin: 0 auto;
@@ -39,3 +40,12 @@
     animation: stars 21s ease; 
     transform-style: preserve-3d;
   }
+
+  @keyframes stars {
+	0%{
+		background-position: 0;
+	}
+	100%{
+		background-position: 100%;
+	}
+}

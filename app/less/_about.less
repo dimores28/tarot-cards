@@ -31,7 +31,7 @@
       line-height: 34px;
       letter-spacing: 0.07em;
       flex-basis: 50%;
-      padding: 20px;
+      padding: 32px;
     }
 
     &__img {
@@ -57,14 +57,22 @@
 @media (max-width: 1023px) {
     .about-me {
 
-        &__img {
-            padding: 5px;
+        &__text {
+            flex-basis: 58%;
         }
     }
 }
 
 @media (max-width: 860px) {
     .about-me {
+        
+        &__block {
+            justify-content: center;
+        }
+
+        &__text {
+            flex-basis: 100%;
+        }
 
         &__img {
             flex-basis: 50%;
