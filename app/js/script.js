@@ -81,33 +81,33 @@ scrollItems = menuItems.map(function(){
   if (item.length) { return item; }
 });
 
-  // Bind to scroll
-$(window).scroll(function(){
-
-    // Get container scroll position
-    // if($("#contacts")[0].offsetTop - $(this).scrollTop() < 460)
-    // {
-    //   topMenuHeight += 500;
-    // }
-
-    var fromTop = $(this).scrollTop() + topMenuHeight;
+function onTouchStart() {
+  var fromTop = $(this).scrollTop() + topMenuHeight;
 
  
-    // Get id of current scroll item
-    var cur = scrollItems.map(function(){
-      if ($(this).offset().top < fromTop)
-        return this;
-    });
-    // Get the id of the current element
-    cur = cur[cur.length-1];
-    var id = cur && cur.length ? cur[0].id : "";
-    // Set/remove active class
-    menuItems
-      .parent().removeClass("active")
-      .end().filter("[href='#"+id+"']").parent().addClass("active");
- });​
+  // Get id of current scroll item
+  var cur = scrollItems.map(function(){
+    if ($(this).offset().top < fromTop)
+      return this;
+  });
+  // Get the id of the current element
+  cur = cur[cur.length-1];
+  var id = cur && cur.length ? cur[0].id : "";
+  // Set/remove active class
+  menuItems
+    .parent().removeClass("active")
+    .end().filter("[href='#"+id+"']").parent().addClass("active");
+}
 
+// $(window).scroll(onTouchStart);​
 
+document.addEventListener('touchstart', onTouchStart, {passive: true});
+window.addEventListener('scroll', onTouchStart, {passive: true});
+
+$('#menu-burger .menu__linck').on('click', function() {
+  $('#menu-burger .menu__linck').removeClass('active');
+  $(this).addClass('active');
+});
 
  (function() {
   /**

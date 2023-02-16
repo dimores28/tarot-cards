@@ -50,12 +50,14 @@
          <div class="container">
             <div class="nav-wrapp">
                <div class="logo">
-                  <img
-                     src="images/logo_m.png"
-                     alt="logo"
-                     width="42"
-                     height="42"
-                  />
+                  <a href="#main">
+                     <img
+                        src="images/logo_m.png"
+                        alt="logo"
+                        width="42"
+                        height="42"
+                     />
+                  </a>
                </div>
 
                <nav>
@@ -84,18 +86,20 @@
 
             <div class="top-nav">
                <div class="logo">
-                  <img
-                     src="images/logo_m.png"
-                     alt="logo"
-                     width="42"
-                     height="42"
-                  />
+                  <a href="#main">
+                     <img
+                        src="images/logo_m.png"
+                        alt="logo"
+                        width="42"
+                        height="42"
+                     />
+                  </a>
                </div>
                <input id="menu-toggle" type="checkbox" />
                <label class="menu-button-container" for="menu-toggle">
                   <span class="menu-button"></span>
                </label>
-               <ul class="menu-burger">
+               <ul class="menu-burger" id="menu-burger">
                   <li>
                      <a href="#main" class="menu__linck active"> Головна </a>
                   </li>
@@ -648,10 +652,10 @@
             <div class="container">
                <div class="accordion" id="accordion">
                   <div class="accordion__item">
-                     <div class="accordion__header">
+                     <button class="accordion__header" role="button" aria-controls="collapseWidthQuestion4">
                         Як задати питання до карт правильно?
-                     </div>
-                     <div class="accordion__body">
+                     </button>
+                     <div class="accordion__body" id="collapseWidthQuestion4">
                         <div class="accordion__content">
                            Пишете мені в зручний для вас месенджер, описуєте
                            вашу ситуацію, я допомагаю правильно поставити
@@ -660,8 +664,10 @@
                      </div>
                   </div>
                   <div class="accordion__item">
-                     <div class="accordion__header">Як проходить сесія?</div>
-                     <div class="accordion__body">
+                     <button class="accordion__header" role="button" aria-expanded="false" aria-controls="collapseWidthQuestion1">
+                        Як проходить сесія?
+                     </button>
+                     <div class="accordion__body" id="collapseWidthQuestion1">
                         <div class="accordion__content">
                            Пишете мені в зручний для вас месенджер, оплачуєте та отримуєте 
 									відповідь у форматі смс або голосового повідомлення.
@@ -671,8 +677,10 @@
                      </div>
                   </div>
                   <div class="accordion__item">
-                     <div class="accordion__header">Оплата наперед завжди?</div>
-                     <div class="accordion__body">
+                     <button class="accordion__header" role="button" aria-expanded="false" aria-controls="collapseWidthQuestion2">
+                        Оплата наперед завжди?
+                     </button>
+                     <div class="accordion__body" id="collapseWidthQuestion2">
                         <div class="accordion__content">
                            Так, я беру оплату наперед, так безпечно. Вже були
                            неприємні інциденти.
@@ -680,8 +688,10 @@
                      </div>
                   </div>
                   <div class="accordion__item">
-                     <div class="accordion__header">Це все конфіденційно?</div>
-                     <div class="accordion__body">
+                     <button class="accordion__header" role="button" aria-expanded="false" aria-controls="collapseWidthQuestion3">
+                        Це все конфіденційно?
+                     </button>
+                     <div class="accordion__body" id="collapseWidthQuestion3">
                         <div class="accordion__content">
                            Звичайно! Вся інформація далі нашого діалогу ні до
                            кого не дійде. Я поважаю кожного клієнта, тому ні
